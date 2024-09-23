@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx}    % For including graphics
+\usepackage{subcaption}  % For subfigure environment
+
+\begin{document}
+
+\title{Side-by-Side Figures using Subfigure}
+\author{Ashim Prasad}
+\date{\today}
+\maketitle
+
+\section*{Introduction}
+This document demonstrates how to use the subfigure environment to include side-by-side images in LaTeX.
+
+\section*{Figures}
+
+\begin{figure}[ht]
+    \centering
+    % First subfigure
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{WhatsApp Image 2024-09-23 at 4.08.17 PM.jpeg} % Replace with actual image file
+        \caption{Image 1}
+        \label{fig:image1}
+    \end{subfigure}
+    \hfill
+    % Second subfigure
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{WhatsApp Image 2024-09-23 at 4.08.24 PM.jpeg} % Replace with actual image file
+        \caption{Image 2}
+        \label{fig:image2}
+    \end{subfigure}
+    \caption{Two side-by-side images using the subfigure concept.}
+    \label{fig:sidebyside}
+\end{figure}
+
+\end{document}
